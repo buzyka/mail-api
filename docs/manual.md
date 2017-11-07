@@ -37,7 +37,7 @@ Test by CURL
 You may access your APIs with the curl command like the following,
 
 ```bash
-$ curl -i -H "Content-Type: application/json" -H "X-MailBox-access-token: accessToken25" "http://mail.local/message/list"
+$ curl -i -H "Accept:application/json" -H "X-MailBox-access-token: accessToken25" "http://mail.local/message/list"
 
 HTTP/1.1 200 OK
 Date: Tue, 07 Nov 2017 08:53:44 GMT
@@ -83,7 +83,7 @@ Examles:
 
 Get list all messages, page 2
 ```bash
-$curl -i -H "Content-Type: application/json" -H "X-MailBox-access-token: accessToken25" "http://mail.local/message/list?type=all&page=2"
+$curl -i -H "Accept:application/json" -H "X-MailBox-access-token: accessToken25" "http://mail.local/message/list?type=all&page=2"
 
 HTTP/1.1 200 OK
 Date: Tue, 07 Nov 2017 09:15:20 GMT
@@ -102,7 +102,7 @@ Content-Type: application/json; charset=UTF-8
 
 Get list archived messages
 ```bash
-curl -i -H "Content-Type: application/json" -H "X-MailBox-access-token: accessToken25" "http://mail.local/message/list?type=archived"
+curl -i -H "Accept:application/json" -H "X-MailBox-access-token: accessToken25" "http://mail.local/message/list?type=archived"
 HTTP/1.1 200 OK
 Date: Tue, 07 Nov 2017 09:16:50 GMT
 Server: Apache/2.4.23 (Win32) PHP/5.6.28
@@ -120,7 +120,7 @@ Content-Type: application/json; charset=UTF-8
 
 Get active messages second page and set row per page setting (it is 20 by default)
 ```bash
-$curl -i -H "Content-Type: application/json" -H "X-MailBox-access-token: accessToken25" "http://mail.local/message/list?type=active&page=2&per-page=3"
+$curl -i -H "Accept:application/json" -H "X-MailBox-access-token: accessToken25" "http://mail.local/message/list?type=active&page=2&per-page=3"
 
 HTTP/1.1 200 OK
 Date: Tue, 07 Nov 2017 09:23:43 GMT
@@ -148,7 +148,7 @@ Retrieve message by id (you can get it from method `list`).
 
 Example:
 ```bash
-curl -i -H "Content-Type: application/json" -H "X-MailBox-access-token: accessToken25" "http://mail.local/message/show?id=3"
+curl -i -H "Accept:application/json" -H "X-MailBox-access-token: accessToken25" "http://mail.local/message/show?id=3"
 HTTP/1.1 200 OK
 Date: Tue, 07 Nov 2017 09:31:15 GMT
 Server: Apache/2.4.23 (Win32) PHP/5.6.28
@@ -161,7 +161,7 @@ Content-Type: application/json; charset=UTF-8
 
 If id not found you get an exception :
 ```bash
-$curl -i -H "Content-Type: application/json" -H "X-MailBox-access-token: accessToken25" "http://mail.local/message/show?id=1000"
+$curl -i -H "Accept:application/json" -H "X-MailBox-access-token: accessToken25" "http://mail.local/message/show?id=1000"
 
 HTTP/1.1 404 Not Found
 Date: Tue, 07 Nov 2017 09:36:35 GMT
@@ -185,7 +185,7 @@ This action “reads” a message and marks it as read in database.
 
 Example:
 ```bash
-$curl -i -H "Content-Type: application/json" -H "X-MailBox-access-token: accessToken25" "http://mail.local/message/read?id=5"
+$curl -i -H "Accept:application/json" -H "X-MailBox-access-token: accessToken25" "http://mail.local/message/read?id=5"
 
 HTTP/1.1 200 OK
 Date: Tue, 07 Nov 2017 09:41:18 GMT
@@ -207,7 +207,8 @@ http://mail.local/message/to-archive?id=[message_id]
 This action sets a message to archived and return a message.
 
 ```bash
-curl -i -H "Content-Type: application/json" -H "X-MailBox-access-token: accessToken25" "http://mail.local/message/to-archive?id=5"
+$curl -i -H "Accept:application/json" -H "X-MailBox-access-token: accessToken25" "http://mail.local/message/to-archive?id=5"
+
 HTTP/1.1 200 OK
 Date: Tue, 07 Nov 2017 09:43:40 GMT
 Server: Apache/2.4.23 (Win32) PHP/5.6.28
