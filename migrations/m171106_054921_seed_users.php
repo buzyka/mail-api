@@ -12,7 +12,7 @@ class m171106_054921_seed_users extends Migration
      */
     public function safeUp()
     {
-        $userIds = \Yii::$app->db->createCommand('SELECT uid FROM message')->queryAll();
+        $userIds = \Yii::$app->db->createCommand('SELECT DISTINCT uid FROM message')->queryAll();
         $seedData = [];
         foreach ($userIds as $userId){
             $uid = $userId['uid'];
