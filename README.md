@@ -4,7 +4,7 @@
 </p>
 
 Application based on Yii2 framework, used Yii 2 Basic Project Template as a skeleton.
-Implemented requirements contains in the document[\/task\/Mailbox API.pdf](https://github.com/buzyka/mail-api/blob/version1/task/Mailbox%20API.pdf) of this repository
+Implemented requirements contains in the document[\/task\/Mailbox API.pdf](https://github.com/buzyka/mail-api/blob/master/task/Mailbox%20API.pdf) of this repository
 
 DIRECTORY STRUCTURE
 -------------------
@@ -84,4 +84,4 @@ http://your-domain.com
 USING API
 ---------
 
-User manual available [here](https://github.com/buzyka/mail-api/blob/version1/task/manual.md)
+User manual available [here](https://github.com/buzyka/mail-api/blob/master/docs/manual.md)
