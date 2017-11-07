@@ -24,6 +24,11 @@ class m171103_154402_create_message_table extends Migration
             'subject'   => Schema::TYPE_TEXT,
             'message'   => Schema::TYPE_TEXT
         ], $tableOptions);
+
+        $this->createIndex('index_by_user_id', 'message', ['uid']);
+
+        //this index will be effective for list method
+        $this->createIndex('index_by_uid_time_archived', 'message', ['uid', 'time_archived']);
     }
 
     /**

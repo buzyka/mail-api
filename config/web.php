@@ -50,10 +50,8 @@ $config = [
         'urlManager' => [
             'class' => 'yii\web\UrlManager',
             'enablePrettyUrl' => true,
-            //'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'box'],
                 ['class' => 'yii\rest\UrlRule', 'controller' => 'message'],
             ],
         ],

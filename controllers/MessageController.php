@@ -10,6 +10,11 @@ use yii\web\UnprocessableEntityHttpException;
 use yii\web\NotFoundHttpException;
 use yii\web\ServerErrorHttpException;
 
+/**
+ * API message endpoint controller
+ *
+ * @package app\controllers
+ */
 class MessageController extends \app\controllers\BaseAPIController
 {
     const WAS_READ = 'read';

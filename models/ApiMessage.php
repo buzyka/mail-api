@@ -100,7 +100,6 @@ class ApiMessage extends \app\models\Message
         $provider = new ActiveDataProvider([
             'query' => $query,
             'pagination' => [
-                'pageSize' => Yii::$app->params['apiListPageSize'],
             ]
         ]);
 
