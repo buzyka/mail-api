@@ -36,6 +36,14 @@ INSTALLATION
 
 Get code from GitHab repository [https:\/\/github.com\/buzyka\/mail-api](https:\/\/github.com\/buzyka\/mail-api) (download code, clone repository any suitable way).
 Move to code directory.
+
+Update directory permission
+
+```bash
+$ chmod a+w runtime/
+$ chmod a+w web/assets/
+```
+
 Install application using the following command:
 ~~~
 php composer.phar install
@@ -71,7 +79,7 @@ Migrations create tables in database and seed them with testing data.
 
 For run migrations using the following command:
 ~~~
-php yii migration/up
+php yii migrate/up
 ~~~
 
 Now you can check yous site by url:

@@ -16,6 +16,6 @@ $this->title = 'Mailbox API';
         <p class="lead">You have successfully installed Mailbox API.</p>
         <p class="lead">Your endpoint <a href="<?=$exampleUrl?>"><?=$exampleUrl?></p>
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+        <p><a class="btn btn-lg btn-success" href="https://github.com/buzyka/mail-api/blob/master/docs/manual.md">Manual</a></p>
     </div>
 </div>
